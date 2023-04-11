@@ -136,7 +136,7 @@ main div section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     background-color: #ffffff87;
     width: 1000px;
     height: 510px;
@@ -222,6 +222,7 @@ footer h2 {
     text-align: center;
     margin-bottom: 10px;
 }
+
 footer .items_footer {
     display: flex;
     width: 100%;
@@ -236,7 +237,7 @@ footer .agradecimento {
     background-color: #161616;
     width: 100vw;
     position: fixed;
-    top: 96%;
+    top: 95.5%;
     padding: 6px;
     left: -1%;
     text-align: center;
