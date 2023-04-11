@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: sans-serif;
+    animation: mudarFundo 6s ease-in-out infinite alternate;
+    background: center center no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@keyframes mudarFundo {
+    0% {
+        background-image: url("../imagens/imagens_fundo/balao_no_lago.jpg");
+    }
+
+    50% {
+        background-image: url("../imagens/imagens_fundo/aurora.jpg");
+    }
+
+    100% {
+        background-image: url("../imagens/imagens_fundo/universo.jpg");
+    }
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: #b6b5b5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+    background-color: #3b3bfb;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    box-shadow: 0px 3px 3px #7fffd474;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 20px;
+    margin-right: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+header nav ul li::after {
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color: lightblue;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    transition: .3s ease-in-out;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    top: 90px;
+}
+
+main .sobreMim {
+    padding: 5px;
+    color: #f4f4f4;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+main .sobreMim div p {
+    max-width: 70%;
+    line-height: 22px;
+    text-align: justify;
+}
+
+main .sobreMim div img {
+    height: 220px;
+    margin: auto;
+    margin-right: 100px;
+    animation: animarImg 1s ease-in-out infinite alternate;
+}
+
+@keyframes animarImg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(-5px, 5px);
+    }
+}
+
+main .div_projetos h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #161616;
+}
+
+main div section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #ffffff87;
+    width: 1000px;
+    height: 510px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+main div section .itemsImg {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+main div section .itemsImg img {
+    border-radius: 5px;
+    margin: auto;
+    height: 370px;
+}
+
+main div section .itemsImg button {
+    background-color: transparent;
+    width: 38px;
+    border: none;
+    height: 100%;
+    margin-top: 13.5px;
+    cursor: pointer;
+    font-size: 40px;
+    outline: none;
+    padding-top: 20px;
+}
+
+main div section .itemsImg button.btnAnterior {
+    width: 45px;
+}
+
+main div section .itemsImg button.btnAnterior:hover {
+    background-image: linear-gradient(to right, #ffffffa6, #ffffff00);
+}
+
+main div section .itemsImg button.btnSeguinte {
+    width: 45px;
+}
+
+main div section .itemsImg button.btnSeguinte:hover {
+    background-image: linear-gradient(to left, #ffffffa6, #ffffff00);
+}
+
+main div section .descricaoImg {
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    margin-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+main div section .divRadios {
+    text-align: center;
+    padding: 10px;
+}
+
+main div section .divRadios .IptsRadios {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 5px;
+    height: 160px;
+    background-color: #161616;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer .items_footer {
+    display: flex;
+    width: 100%;
+}
+
+footer .items_footer div {
+    margin-right: 38.3%;
+    font-size: 20px;
+}
+
+footer .agradecimento {
+    background-color: #161616;
+    width: 100vw;
+    position: fixed;
+    top: 94.2%;
+    padding: 6px;
+    left: -1%;
+    text-align: center;
+    font-weight: bold;
+}
