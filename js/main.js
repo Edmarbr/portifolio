@@ -79,13 +79,13 @@ class Imagem {
 
 // Projeto publicação
 const imgsProjetoPubli = [
-    '../imagens/imagens_projeto_publi/index.png',
-    '../imagens/imagens_projeto_publi/login.png',
-    '../imagens/imagens_projeto_publi/cadastro.png',
-    '../imagens/imagens_projeto_publi/pagina_principal.png',
-    '../imagens/imagens_projeto_publi/nova_publi.png',
-    '../imagens/imagens_projeto_publi/confirm_logout.png',
-    '../imagens/imagens_projeto_publi/pesquisa_nao_encontrada.png'
+    'imagens/imagens_projeto_publi/index.png',
+    'imagens/imagens_projeto_publi/login.png',
+    'imagens/imagens_projeto_publi/cadastro.png',
+    'imagens/imagens_projeto_publi/pagina_principal.png',
+    'imagens/imagens_projeto_publi/nova_publi.png',
+    'imagens/imagens_projeto_publi/confirm_logout.png',
+    'imagens/imagens_projeto_publi/pesquisa_nao_encontrada.png'
 ]
 const descImgsPubli = [
     'Página inicial',
@@ -104,12 +104,12 @@ const descricaoImgPubli = document.getElementById("descricaoImgPubli")
 
 // Projeto Padaria
 const imgsProjetoPadaria = [
-    '../imagens/imagens_projeto_padaria/apresentacao.png',
-    '../imagens/imagens_projeto_padaria/selecionando_produtos.png',
-    '../imagens/imagens_projeto_padaria/selecionando_mais_quantidades.jpg',
-    '../imagens/imagens_projeto_padaria/mudanca_no_estoque.jpg',
-    '../imagens/imagens_projeto_padaria/quantidade_produto_maior_que_estoque.png',
-    '../imagens/imagens_projeto_padaria/limite_estoque.png'
+    'imagens/imagens_projeto_padaria/apresentacao.png',
+    'imagens/imagens_projeto_padaria/selecionando_produtos.png',
+    'imagens/imagens_projeto_padaria/selecionando_mais_quantidades.jpg',
+    'imagens/imagens_projeto_padaria/mudanca_no_estoque.jpg',
+    'imagens/imagens_projeto_padaria/quantidade_produto_maior_que_estoque.png',
+    'imagens/imagens_projeto_padaria/limite_estoque.png'
 ]
 const descImgsPadaria = [
     'Página inicial',
