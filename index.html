@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 <body id="inicio">
 
-    <header>
-        <h1>Edmar de Brito</h1>
-        <nav>
-            <ul>
+    <header id="header">
+        <div class="menu_responsive">
+            <div id="menuBar">
+                <img src="imagens/icons/icon_menu.png" alt="Ícone de menu" id="imgMenu">
+            </div>
+            <h1>Edmar de Brito</h1>
+        </div>
+        <nav id="nav">
+            <ul id="ulItens">
                 <li><a href="#inicio">Home</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -21,12 +26,12 @@
     </header>
     <main>
         <div class="sobreMim">
-            <div>
+            <div class="div_texto">
                 <p>Bem-vindo(a) ao meu portfólio, aqui você poderá visualizar projetos criados por mim que estão em constante evolução!</p><br>
                 <h2>Um pouco sobre mim</h2>
                 <p>Sou uma pessoa apaixonada por tecnologia, especialmente pela área de programação. Pretendo seguir carreira como programador full-stack. Atualmente, possuo conhecimento em <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Python</strong>, <strong>MySQL</strong>, <strong>Git</strong>, <strong>GitHub</strong> e comecei recentemente os estudos em <strong>React</strong>.</strong></p>
             </div>
-            <div>
+            <div class="div_img">
                 <img src="imagens/imagens_fundo/astronauta.png" alt="Imagem de astronauta">
             </div>
         </div>
@@ -74,5 +79,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/responsive.js"></script>
 </body>
 </html>

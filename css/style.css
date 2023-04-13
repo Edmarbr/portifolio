@@ -12,7 +12,7 @@ html, body {
 
 body {
     font-family: sans-serif;
-    animation: mudarFundo 6s ease-in-out infinite alternate;
+    animation: mudarFundo 3s ease-in-out infinite alternate;
     background: center center no-repeat fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -23,12 +23,8 @@ body {
         background-image: url("../imagens/imagens_fundo/balao_no_lago.jpg");
     }
 
-    50% {
-        background-image: url("../imagens/imagens_fundo/aurora.jpg");
-    }
-
     100% {
-        background-image: url("../imagens/imagens_fundo/universo.jpg");
+        background-image: url("../imagens/imagens_fundo/aurora.jpg");
     }
 }
 
@@ -59,6 +55,17 @@ header {
     height: 70px;
     position: fixed;
     box-shadow: 0px 3px 3px #7fffd474;
+}
+
+header .menu_responsive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #menuBar {
+    display: none;
+    cursor: pointer;
 }
 
 header nav ul {
@@ -97,20 +104,26 @@ main {
 main .sobreMim {
     padding: 5px;
     color: #f4f4f4;
-    display: inline-flex;
-    margin-bottom: 20px;
+    display: flex;
+}
+
+main .sobreMim .div_texto {
+    width: 60%;
+    margin-left: 20px;
 }
 
 main .sobreMim div p {
-    max-width: 70%;
     line-height: 22px;
     text-align: justify;
 }
 
-main .sobreMim div img {
+main .sobreMim .div_img {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main .sobreMim .div_img img {
     height: 220px;
-    margin: auto;
-    margin-right: 100px;
     animation: animarImg 1s ease-in-out infinite alternate;
 }
 
@@ -136,9 +149,8 @@ main div section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     background-color: #ffffff87;
-    width: 1000px;
+    width: 90%;
     height: 510px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -148,7 +160,7 @@ main div section .itemsImg {
     display: flex;
     width: 100%;
     align-items: center;
-    position: relative;
+
     padding-top: 20px;
 }
 
@@ -156,6 +168,7 @@ main div section .itemsImg img {
     border-radius: 5px;
     margin: auto;
     height: 370px;
+    width: 90%;
 }
 
 main div section .itemsImg button {
@@ -170,16 +183,12 @@ main div section .itemsImg button {
     padding-top: 20px;
 }
 
-main div section .itemsImg button.btnAnterior {
+main div section .itemsImg button.btnAnterior, main div section .itemsImg button.btnSeguinte {
     width: 45px;
 }
 
 main div section .itemsImg button.btnAnterior:hover {
     background-image: linear-gradient(to right, #ffffffa6, #ffffff00);
-}
-
-main div section .itemsImg button.btnSeguinte {
-    width: 45px;
 }
 
 main div section .itemsImg button.btnSeguinte:hover {
@@ -237,9 +246,237 @@ footer .agradecimento {
     background-color: #161616;
     width: 100vw;
     position: fixed;
-    top: 95.5%;
+    top: 94.7%;
     padding: 6px;
     left: -1%;
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    main .sobreMim .div_texto {
+        width: 93%;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main .sobreMim {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header .menu_responsive h1 {
+        font-size: 26px;
+    }
+
+    header nav ul li {
+        margin-right: 50px;
+    }
+
+    main .sobreMim .div_img {
+        text-align: center;
+    }
+
+    main div section {
+        height: auto;
+    }
+
+    main div section h2 {
+        font-size: 20px;
+    }
+
+    main div section .itemsImg img {
+        height: 300px;
+    }
+
+    main div section .itemsImg button {
+        margin: 0;
+        padding: 104px 0;
+    }
+
+    main div section .descricaoImg {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .sobreMim .div_texto {
+        width: 93%;
+    }
+
+    main div section .itemsImg {
+        flex-direction: column;
+        height: 260px;
+    }
+
+    main div section .itemsImg img {
+        width: 95%;
+    }
+
+    main div section .itemsImg button {
+        font-size: 30px;
+        width: 50px;
+        order: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    main div section .itemsImg button:hover {
+        border-radius: 15px;
+    }
+
+    main div section .itemsImg button.btnAnterior {
+        position: relative;
+        top: 3.5px;
+        margin-right: auto;
+    }
+
+    main div section .itemsImg button.btnSeguinte {
+        position: relative;
+        top: -31px;
+        margin-left: auto;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer .items_footer div {
+        font-size: 16px;
+    }
+
+    main div section .descricaoImg {
+        font-size: 15px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 622px) {
+    main div section .itemsImg {
+        height: 235px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    header #menuBar {
+        display: block;
+    }
+
+    header .menu_responsive h1 {
+        margin: auto;
+    }
+
+    header nav {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        height: 100vh;
+        background-color: #3b3bfb;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li {
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    main .sobreMim .div_img img {
+        height: 180px;
+    }
+
+    main .sobreMim .div_texto {
+        width: 95%;
+        margin-right: 2%;
+    }
+
+    main div section {
+        width: 80%;
+    }
+
+    main div section .itemsImg {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    main div section .itemsImg {
+        height: 170px;
+    }
+
+    main .sobreMim .div_texto {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    main div section .itemsImg {
+        height: 160px;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    footer .items_footer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    main div section .itemsImg {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main div section .itemsImg {
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    main div section .itemsImg {
+        height: 125px;
+    }
+
+    main .sobreMim .div_texto {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    header #menuBar img {
+        height: 30px;
+    }
+
+    header .menu_responsive h1 {
+        font-size: 25px;
+    }
+
+    main div section .itemsImg {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    header .menu_responsive h1 {
+        font-size: 20px;
+        margin-right: 25px;
+    }
+
+    main .sobreMim .div_texto {
+        text-align: left;
+    }
 }

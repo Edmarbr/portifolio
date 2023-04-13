@@ -135,4 +135,3 @@ let Padaria = new Imagem(
 
 Publicacao
 Padaria
-
